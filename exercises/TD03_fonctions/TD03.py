@@ -28,4 +28,4 @@ def afficheTemps(temps):
     if 
     
     
-afficheTemps((1,0,14,23))   
+afficheTemps((1,0,14,23))
