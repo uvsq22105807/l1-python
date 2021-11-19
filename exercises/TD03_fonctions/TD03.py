@@ -21,11 +21,25 @@ print(temps[0],"jours",temps[1],"heures",temps[2],"minutes",temps[3],"secondes")
 
 
 
-
 #fonction auxiliaire ici
+def fonctionauxiliare(temps,mot):
+    if temps==1:
+        print(temps, mot, end=" ")
+    elif temps > 1:
+        print (temps, mot + "s", end=" ") 
+    else:
+        print (temps, mot + "s", end=" ")
 
 def afficheTemps(temps):
-    if 
-    
-    
+    fonctionauxiliare(temps[0],"jour")
+    fonctionauxiliare(temps[1],"heure")
+    fonctionauxiliare(temps[2],"minute")
+    fonctionauxiliare(temps[3],"seconde")  
 afficheTemps((1,0,14,23))
+
+
+
+def demandeTemps():
+    pass
+
+afficheTemps(demandeTemps())
