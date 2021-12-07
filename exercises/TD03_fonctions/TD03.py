@@ -35,7 +35,7 @@ def afficheTemps(temps):
     fonctionauxiliare(temps[0],"jour")
     fonctionauxiliare(temps[1],"heure")
     fonctionauxiliare(temps[2],"minute")
-    fonctionauxiliare(temps[3],"seconde")  
+    fonctionauxiliare(temps[3],"seconde") 
 
 afficheTemps((1,0,14,23))
 
@@ -45,5 +45,8 @@ def demandeTemps():
     h=int(input("Nombre d'heures?"))
     m=int(input("Nombre de minutes?"))
     s=int(input("Nombre de secondes?"))
+
+    if j and h and m and s > 60:
+        print("Ce format n'est pas valide")
 
 afficheTemps(demandeTemps())
